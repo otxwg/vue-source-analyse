@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue.js grid component example</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Delete ".min" for console warnings in development -->
+    <script></script>
+    <script src="../../dist/vue.js"></script>
+  </head>
+  <body>
+    <!-- demo root element -->
+    <span id="demo">{{searchQuery}}{{searchQuery}}</span>
+    <!-- <input name="query" v-model="searchQuery" /> -->
+
+    <script>
+      debugger;
+      var demo = new Vue({
+        el: "#demo",
+        data: {
+          searchQuery: "初始化了",
+        },
+        mounted() {
+          debugger;
+          // this.searchQuery = "更新了";
+        },
+      });
+    </script>
+  </body>
+</html>
